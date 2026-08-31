@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Courses & Fees | Wairimu Dream Defensive Driving School Kenya</title>
   <meta name="description" content="All driving courses and transparent fees at Wairimu Dream Driving School. Special offer B1 Automatic KSH 11,000, Manual B2 KSH 13,000, Motorbike, Trucks, and Vans." />
-  <link rel="canonical" href="http://localhost:3000/courses.html" />
+  <link rel="canonical" href="https://wairimu-dream-defensive-driving-school.karurikenga.workers.dev/courses" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,20 +68,21 @@
   </header>
 
   <main>
-    <!-- Hero Section (Daylight Fleet with Dark Overlay & Clean White Heading) -->
-    <section class="hero-mobile-fit" id="coursesHeroSection" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('images/hero/hero-1\ \(1\).png'); min-height: 40vh; justify-content: center; padding: 4rem 0;">
+    <!-- Full-Width Hero Banner -->
+    <section class="page-hero-img courses-page-hero">
       <div class="container">
-        <!-- Top Overlay Headline -->
-        <div class="hero-top-overlay-headline">
-          <h1 class="hero-headline-blue" style="color: #FFFFFF; text-shadow: none; margin-bottom: 0.5rem;">Our Driving Courses</h1>
-          <p class="hero-lead-text" style="color: #ECECEC; text-shadow: none;">
-            Comprehensive NTSA approved training programs designed for passenger vehicles, motorbikes, trucks, and special commercial categories.
-          </p>
+        <div class="page-hero-text">
+          <h1 class="page-hero-heading">The Courses We Offer</h1>
+          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>Courses</span>
+          </nav>
         </div>
       </div>
     </section>
 
-    <!-- Categories Section -->
+    <!-- Photo Category Cards -->
     <section class="section-padding bg-light-section">
       <div class="container">
         <div class="section-header-corp">
@@ -90,64 +91,108 @@
           <p class="section-desc-corp">We offer certified driver training for the following standard vehicle classifications in Kenya.</p>
         </div>
 
-        <!-- Clean Grid of Category Cards -->
-        <div class="category-grid">
+        <div class="course-photo-grid">
           <!-- A2 Motor Bike -->
-          <div class="category-card-item">
-            <div class="category-card-badge">A2</div>
-            <h3 class="category-card-name">Motor Bike (Motorcycle)</h3>
+          <div class="course-photo-card">
+            <div class="photo-wrap">
+              <img src="images/courses/a2-motorcycle.png" alt="A2 Motor Bike" />
+            </div>
+            <div class="photo-card-body">
+              <div class="photo-cat-badge">A2</div>
+              <span class="photo-card-label">Motor Bike (Motorcycle)</span>
+            </div>
           </div>
 
           <!-- A3 Tuktuk -->
-          <div class="category-card-item">
-            <div class="category-card-badge">A3</div>
-            <h3 class="category-card-name">Tuktuk (Three Wheeler)</h3>
+          <div class="course-photo-card">
+            <div class="photo-wrap">
+              <img src="images/courses/three-wheeled-taxi.png" alt="A3 Tuktuk Three Wheeler" />
+            </div>
+            <div class="photo-card-body">
+              <div class="photo-cat-badge">A3</div>
+              <span class="photo-card-label">Tuktuk (Three Wheeler)</span>
+            </div>
           </div>
 
           <!-- B1 Automatic -->
-          <div class="category-card-item">
-            <div class="category-card-badge">B1</div>
-            <h3 class="category-card-name">Automatic Light Vehicle</h3>
+          <div class="course-photo-card">
+            <div class="photo-wrap">
+              <img src="images/courses/b1-automatic.png" alt="B1 Automatic Light Vehicle" />
+            </div>
+            <div class="photo-card-body">
+              <div class="photo-cat-badge">B1</div>
+              <span class="photo-card-label">Automatic Light Vehicle</span>
+            </div>
           </div>
 
           <!-- B2 Manual -->
-          <div class="category-card-item">
-            <div class="category-card-badge">B2</div>
-            <h3 class="category-card-name">Manual Light Vehicle</h3>
+          <div class="course-photo-card">
+            <div class="photo-wrap">
+              <img src="images/courses/b2-manual.jpeg" alt="B2 Manual Light Vehicle" />
+            </div>
+            <div class="photo-card-body">
+              <div class="photo-cat-badge">B2</div>
+              <span class="photo-card-label">Manual Light Vehicle</span>
+            </div>
           </div>
 
-          <!-- B3 PSV Taxi / Uber -->
-          <div class="category-card-item">
-            <div class="category-card-badge">B3</div>
-            <h3 class="category-card-name">PSV Taxi / Uber (Silent / Sienta)</h3>
+          <!-- B3 PSV / Uber -->
+          <div class="course-photo-card">
+            <div class="photo-wrap">
+              <img src="images/courses/b3-executive-advanced.png" alt="B3 PSV Taxi Uber" />
+            </div>
+            <div class="photo-card-body">
+              <div class="photo-cat-badge">B3</div>
+              <span class="photo-card-label">PSV Taxi / Uber (Silent / Sienta)</span>
+            </div>
           </div>
 
-          <!-- C1 Light Commercial Truck -->
-          <div class="category-card-item">
-            <div class="category-card-badge">C1</div>
-            <h3 class="category-card-name">Light Commercial Truck</h3>
+          <!-- C1 Light Truck -->
+          <div class="course-photo-card">
+            <div class="photo-wrap">
+              <img src="images/courses/c1-light-truck.png" alt="C1 Light Commercial Truck" />
+            </div>
+            <div class="photo-card-body">
+              <div class="photo-cat-badge">C1</div>
+              <span class="photo-card-label">Light Commercial Truck</span>
+            </div>
           </div>
 
-          <!-- C2 Heavy rigid -->
-          <div class="category-card-item">
-            <div class="category-card-badge">C2</div>
-            <h3 class="category-card-name">Ten Wheeler Truck (Heavy rigid)</h3>
+          <!-- C2 Ten Wheeler -->
+          <div class="course-photo-card">
+            <div class="photo-wrap">
+              <img src="images/courses/c2-light-medium-truck.png" alt="C2 Ten Wheeler Heavy Truck" />
+            </div>
+            <div class="photo-card-body">
+              <div class="photo-cat-badge">C2</div>
+              <span class="photo-card-label">Ten Wheeler Truck (Heavy Rigid)</span>
+            </div>
           </div>
 
           <!-- D1 Light Van -->
-          <div class="category-card-item">
-            <div class="category-card-badge">D1</div>
-            <h3 class="category-card-name">Light Van (14 Seater PSV)</h3>
+          <div class="course-photo-card">
+            <div class="photo-wrap">
+              <img src="images/courses/d1-van.png" alt="D1 Light Van 14 Seater PSV" />
+            </div>
+            <div class="photo-card-body">
+              <div class="photo-cat-badge">D1</div>
+              <span class="photo-card-label">Light Van (14 Seater PSV)</span>
+            </div>
           </div>
 
           <!-- B & C Combined -->
-          <div class="category-card-item">
-            <div class="category-card-badge combo-badge">B &amp; C</div>
-            <h3 class="category-card-name">Combined Light &amp; Medium</h3>
+          <div class="course-photo-card">
+            <div class="photo-wrap">
+              <img src="images/courses/b1-automatic.png" alt="B and C Combined Light and Medium" />
+            </div>
+            <div class="photo-card-body">
+              <div class="photo-cat-badge combo">B &amp; C</div>
+              <span class="photo-card-label">Combined Light &amp; Medium</span>
+            </div>
           </div>
         </div>
 
-        <!-- Prominent Centered Contact Button -->
+        <!-- Single Prominent CTA -->
         <div class="prominent-contact-wrapper">
           <a href="contact.html" class="btn-prominent-contact">
             <span>Contact Us for Pricing &amp; Enrollment</span>
@@ -157,6 +202,7 @@
       </div>
     </section>
   </main>
+
 
   <!-- Footer -->
   <footer class="site-footer-corp">
