@@ -319,7 +319,7 @@ button, input, select, textarea {
   background-color: #1A1A1A;
   background-image:
     linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
-    url('images/hero/hero-1 (1).png');
+    url('images/hero/hero-1(1).jpeg');
   background-size: cover;
   background-position: center;
   padding: 2.5rem 0 3.5rem;
@@ -340,7 +340,7 @@ button, input, select, textarea {
   overflow: hidden;
   background-image:
     linear-gradient(to bottom, rgba(0,0,0,0.50), rgba(0,0,0,0.72)),
-    url('images/hero/hero-2.png');
+    url('images/hero/hero-2.jpeg');
 }
 
 
@@ -1442,6 +1442,292 @@ button, input, select, textarea {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+}
+
+/* ==========================================================================
+   Courses Page: Detailed Catalog Cards
+   ========================================================================== */
+
+.course-catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.detailed-course-card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-light);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.detailed-course-card .course-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.detailed-course-card .course-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detailed-course-card .course-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.course-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.course-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.course-badge.combo {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-gold));
+  font-size: 0.9rem;
+}
+
+.course-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.course-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+.course-reqs {
+  margin-bottom: 1.5rem;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.course-reqs li {
+  margin-bottom: 0.25rem;
+}
+
+.course-pricing {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-gray-light);
+}
+
+.course-price-main {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.course-tiers {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.btn-enroll-course {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem;
+  background-color: var(--color-dark);
+  color: #FFFFFF;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-enroll-course:hover {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   Courses Page: NTSA & Payments Sections
+   ========================================================================== */
+
+.info-section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.info-card {
+  background: #FFF;
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.info-card h3 {
+  font-size: 1.5rem;
+  color: var(--color-dark);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-card h3 svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-primary);
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #EFEFEF;
+  font-size: 1rem;
+  color: #333;
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.info-list li span:last-child {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.payment-method {
+  background: rgba(14, 134, 212, 0.05);
+  border: 1px solid rgba(14, 134, 212, 0.2);
+  padding: 1.25rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.payment-method h4 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--color-dark);
+}
+
+.payment-method p {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .info-section-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Testimonials Section
+   ========================================================================== */
+
+.testimonials-section {
+  padding: 5rem 0;
+  background-color: #F8F9FA;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.testimonial-card {
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.testimonial-quote-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 40px;
+  height: 40px;
+  color: rgba(14, 134, 212, 0.1);
+}
+
+.testimonial-text {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonial-author-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.testimonial-author-info h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--color-dark);
+}
+
+.testimonial-author-info span {
+  font-size: 0.85rem;
+  color: #666;
 }
 
 /* Courses page hero override (from inline styles) */
